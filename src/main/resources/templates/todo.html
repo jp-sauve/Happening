@@ -1,0 +1,19 @@
+<div th:replace="~{header.html}"></div>
+
+<section class="article">
+  <header class="article-header">
+    <h1 class="article-title" th:text="${todo}">No Title</h1>
+    <p class="article-meta">By  <strong>author</strong>, on <strong>date</strong></p>
+  </header>
+<div th:text="Todo">
+  <section>
+    <header>
+      <h2 th:text="${todo}"></h2>
+      <p th:text="${completed}"></p>
+    </header>
+  </section>
+</div>
+
+</section>
+
+<div th:replace="~{footer.html}"></div>

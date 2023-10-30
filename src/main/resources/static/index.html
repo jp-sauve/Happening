@@ -1,0 +1,37 @@
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Happening</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<div id="header">
+    <h1>Happening</h1>
+
+</div>
+<div id="sidebar">
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</div>
+<div id="content">
+    <div th:text="Model data's 'name' property: ${name}">FUCKDONKEY</div>
+    <div class="container unauthenticated">
+        <div>
+        With Google: <a href="/oauth2/authorization/google">click here</a>
+        </div>
+        <div>
+        With GitHub: <a href="/oauth2/authorization/github">click here</a>
+        </div>
+    </div>
+    <div class="container authenticated" style="display:none">
+        Logged in as: <span id="user"></span>
+    </div>
+
+    <p>Welcome to Happening! The app for what's happening. I mean, what's happening?</p>
+</div>
+</body>
+</html>

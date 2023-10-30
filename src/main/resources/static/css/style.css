@@ -1,0 +1,13 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #aaf;
+}
+p {
+  padding: 1em;
+  line-height: 1.5;
+}
+p span {
+  font-size: 1.4rem;
+}
